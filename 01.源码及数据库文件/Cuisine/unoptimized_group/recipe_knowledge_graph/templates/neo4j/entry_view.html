@@ -1,0 +1,113 @@
+{% load static %} 
+<html>
+<head>
+  <title>舌尖上的老八</title>	
+	<style>
+	 *{  
+            margin: 0px;  
+            padding: 0px;  
+        }  
+        video{  
+            position: fixed;  
+            right: 0px;  
+            bottom: -40px;  
+            min-width: 100%;  
+            min-height: 100%;  
+            height: auto;  
+            width: auto;  
+            filter: brightness(0.4);
+            /*加滤镜
+            //filter: blur(2px); //背景模糊设置 
+            //-webkit-filter: grayscale(100%);
+            //filter:grayscale(100%); //背景灰度设置
+            */
+            z-index:-11
+        }  
+        source{  
+            min-width: 100%;  
+            min-height: 100%;  
+            height: auto;  
+            width: auto;  
+        } 
+        .submit-button {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      width: 150px; /* 设置按钮的宽度 */
+      height: 50px; /* 设置按钮的高度 */
+
+      }
+
+   .overlay-title {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      font-size: 60px;
+      color: #fff;
+      opacity: 0; /* 初始状态为透明 */
+      transition: opacity 10s ease; /* 过渡效果 */
+   
+    }
+
+   .small-title  {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      font-size: 30px;
+      color: #fff;
+      opacity: 0; /* 初始状态为透明 */
+      transition: opacity 4s ease; /* 过渡效果 */
+   
+    }
+
+
+
+</style>
+
+
+
+</head>
+<body>
+ 	<h1 class="overlay-title">不被优化小组</h1>
+	<h2 id="sub-title" class="small-title">倾情呈现</h2>
+
+	<script>
+
+
+    	var title = document.querySelector('.overlay-title');
+    	var subTitle = document.querySelector('.small-title');
+
+    	// 页面加载后自动淡入大标题
+    	window.addEventListener('load', function() {
+      	title.style.opacity = 1;
+
+	// 在大标题淡入完毕后淡入小标题
+      	setTimeout(function() {
+        	subTitle.style.opacity = 1;
+      	}, 4000); // 设置延迟时间，以确保大标题淡入完毕后再淡入小标题
+    	});
+
+  	</script>
+
+
+
+  	<video id="v1" autoplay loop muted>
+              		<source src="{% static 'videos/entry_view_video.mp4' %}" type="video/mp4"  />
+	</video>
+	<form action="/recipe_knowledge_graph/main_view" method="post">
+		<button class="submit-button" style="opacity: 0.3;position:absolute;left:40%;top:85%">可视化传送门(oﾟvﾟ)ノ🎵~</button>
+	</form>
+	<form action="http://127.0.0.1:5000" >
+		<button class="submit-button" style="opacity: 0.3;position:absolute;left:60%;top:85%">奇妙的问答❤系统(✿◕‿◕✿)🎵~</button>
+	</form>
+
+</body>
+</html>
+
+

@@ -1,0 +1,96 @@
+body {
+    background: url("background.png") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+    border-radius: 30px; /* 将按钮的左右边框设置为圆弧 */
+    height: 100vh;
+
+  }
+  
+  .overlay {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #ddd; /* 添加边框 */
+    border-radius: 8px; /* 添加圆角 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+  }
+
+  .input-container {
+    position: relative;
+  }
+  
+  .example-container {
+    margin-top: 10px; /* 控制示例文本与输入框之间的距离 */
+    justify-content: center;
+    align-items: center ;
+  }
+  
+  .input-example {
+    font-size: 14px; /* 调整示例文本的字体大小 */
+    color: gray; /* 设置示例文本的颜色 */
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* 将子元素竖直排列 */
+    text-align: center; /* 让子元素文本水平居中对齐 */
+  }
+  
+
+
+  h1 {
+    color: #333;
+    font-size: 40px;
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    text-align: center;
+    color: #ffffff; /* 白色 */
+  }
+  
+  form {
+    color: #555;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  input[type="text"] {
+    color: #777;
+    font-size: 14px;
+    padding: 8px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  input[name="question"] {
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 18px;
+    background: transparent;
+    color: white;
+    padding: 5px 10px;
+  }
+  
+  input[name="question"]::placeholder {
+    color: white;
+  }
+  
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  

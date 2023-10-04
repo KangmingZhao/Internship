@@ -1,0 +1,35 @@
+body {
+    background: url("background.png") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+.container {
+    position: relative; /* 确保父容器设置为相对定位 */
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid white;
+    padding: 20px;
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    border: 1px solid #ddd; /* 添加边框 */
+    border-radius: 8px; /* 添加圆角 */
+
+}
+
+#submit-button {
+  position: absolute; /* 将按钮设置为绝对定位 */
+  top: 10px; /* 距离顶部的距离 */
+  right: 10px; /* 距离右侧的距离 */
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
